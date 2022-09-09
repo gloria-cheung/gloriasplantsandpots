@@ -24,17 +24,8 @@ gem "turbo-rails"
 # Hotwire's modest JavaScript framework [https://stimulus.hotwired.dev]
 gem "stimulus-rails"
 
-# Transpile app-like JavaScript. Read more: https://github.com/rails/webpacker
-gem 'webpacker', '~> 5.0'
-
-# Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
-gem 'turbolinks', '~> 5'
-
 # Build JSON APIs with ease [https://github.com/rails/jbuilder]
 gem "jbuilder"
-
-# Use jquery as the JavaScript library
-gem 'jquery-rails'
 
 # Use Redis adapter to run Action Cable in production
 # gem "redis", "~> 4.0"
@@ -57,6 +48,7 @@ gem "sassc-rails"
 # FontAwesome & Bootstrap Styling
 gem 'bootstrap', '~> 5.1.3'
 gem 'font-awesome-rails'
+gem 'jquery-rails'
 
 # Stripe
 gem 'stripe'

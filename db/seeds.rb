@@ -7,7 +7,7 @@
 #   Character.create(name: "Luke", movie: movies.first)
 
 def open_asset(file_folder, file_name)
-  File.open(Rails.root.join('db', 'seed_assets', file_folder, file_name))
+  File.open(Rails.root.join('public', 'images', file_folder, file_name))
 end
 
 puts "Seeding..."

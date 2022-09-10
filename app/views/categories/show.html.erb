@@ -1,2 +1,16 @@
-<h1>Categories#show</h1>
-<p>Find me in app/views/categories/show.html.erb</p>
+<section class="container">
+
+  <header>
+    <h1 class="display-4">
+      <%= @category.name %>
+      <small>(<%= pluralize @products.size, 'product' %>)</small>
+    </h1>
+  </header>
+
+  <div class=" products container">
+    <div class="row">
+      <%= render @products %>
+    </div>
+  </div>
+
+</section>

@@ -53,6 +53,12 @@ gem 'jquery-rails'
 # Stripe
 gem 'stripe'
 
+# ImageMagick ( Make sure librairies installed )
+gem 'rmagick'
+
+#Upload files
+gem 'carrierwave'
+
 gem 'material_design_lite-sass'
 
 # Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html#transforming-images]

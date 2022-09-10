@@ -19,6 +19,8 @@ cat3 = Category.find_or_create_by! name: 'Others'
 
 ## PRODUCTS
 
+Product.destroy_all
+
 cat1.products.create!({
   name:  'Bear Face Pot',
   description: 'Handmade Ceramic Planter (wheel thrown) with Drainage Hole. Clear Background with Handcarved Bear Face.

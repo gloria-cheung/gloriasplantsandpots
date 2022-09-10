@@ -1,22 +1,11 @@
-<article>
-  <%= link_to product_path(product) do %>
-    <%= image_tag product.image.thumb.url , alt: product.name %>
-    <h1>
-      <span><%= product.name %></span>
-      <span>$<%= product.price_cents %></span>
-    </h1>
+<div class="col-3 card p-3">
+  <%= link_to product_path(product), class: "product" do %>
+    <%= image_tag product.image.thumb.url , alt: product.name, class: 'card-img-top w-100' %>
+    <div class="card-body">
+      <h5 class="card-title"><%= product.name %></h5>
+      <p class="card-text">$<%= product.price_cents %></p>
+    </div>
+ 
   <% end%>
-  <div>
-    <% if product.quantity == 0 %>
-
-      <button type="button" class="soldout">Sold Out</button>
-      <button type="button" class="btn" disabled><%= fa_icon "shopping-cart", text: 'Add' %></button>
-   
-    <% else %>
-
-      
-      <button type="button" class="btn" ><%= fa_icon "shopping-cart", text: 'Add' %></button>
-    
-    <% end %>
-  </div>
-</article>
+  
+</div>

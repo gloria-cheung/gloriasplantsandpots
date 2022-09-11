@@ -1,2 +1,27 @@
-<h1>Products#show</h1>
-<p>Find me in app/views/products/show.html.erb</p>
+<section class="container pb-5">
+  <header>
+    <h1 class="display-5">
+      <%= link_to @product.category.name, @product.category %> &raquo; <%= @product.name %>
+    </h1>
+  </header>
+  <div class="row">
+    <div class="col">
+      <%= image_tag @product.image.url, class: 'main-img w-100' %>
+    </div>
+    <div class="col product-detail">
+      <h1 class="display-5"><%= @product.name %></h1>
+      <p><%= @product.description %></p>
+      <div class="quantity">
+        <span><%= @product.quantity %> in stock at </span>
+        <span>$<%= @product.price_cents %></span>
+      </div>
+      <div class="price">
+        <% if @product.quantity == 0 %>
+          <button type="button" class="btn soldout" disabled>Sold Out</button>
+        <% else %>
+          <button type="button" class="btn mt-2"><%= fa_icon "shopping-cart", text: 'Add' %></button>   
+        <% end %>                
+      </div>
+    </div>
+  </div>
+</section>

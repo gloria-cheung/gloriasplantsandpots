@@ -50,6 +50,9 @@ gem 'bootstrap', '~> 5.1.3'
 gem 'font-awesome-rails'
 gem 'jquery-rails'
 
+# Money managing
+gem 'money-rails'
+
 # Stripe
 gem 'stripe'
 

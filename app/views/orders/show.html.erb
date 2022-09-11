@@ -1,2 +1,28 @@
-<h1>Orders#show</h1>
-<p>Find me in app/views/orders/show.html.erb</p>
+<section class="container orders-show w-50">
+  <header class="page-header">
+   <h1 class="display-5">Order #<%= @order.id %></h1>
+   <h4>Thank you for your order!</h4>
+  </header>
+  <div class="row">
+    <div class="col d-flex flex-column">
+      <div class="ps-3 pe-3 d-flex justify-content-between line-item-header">
+        <h5 class="fw-normal">ITEM(S)<h5>
+        <h5 class="fw-normal">AMOUNT</h5>
+      </div>
+      <div class="line-item-container w-100">
+        <% @line_items.each do |item| %>
+          <%= render 'line_item', item: item %>
+        <% end %>
+      </div>
+      <div class="ps-3 pe-3 mb-3 d-flex flex-row-reverse line-item-header">
+        <h5 >TOTAL: $<%= @order.total_cents %><h5>
+      </div>
+    </div>
+  </div>
+  <div class="d-flex flex-row-reverse">
+    <%= link_to "Continue Shopping", root_path, class: 'btn btn-lg' %>
+  </div>
+</section>
+
+$<%= @order.total_cents %>
+<%= @order.email %>

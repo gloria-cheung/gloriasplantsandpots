@@ -1,9 +1,9 @@
-<div class="col">
+<div class="col-3 card categoryContainer p-3">
   <%= link_to category_path(category), class: "category" do %>
     <%= image_tag category.image.thumb.url , alt: category.name %>
-
-    <p><%= category.name %></p>
- 
+    <div class="card-img-overlay">
+      <h3 class="card-title d-flex justify-content-center"><%= category.name %></h3>
+    </div>
   <% end%>
   
 </div>

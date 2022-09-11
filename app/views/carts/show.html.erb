@@ -1,0 +1,52 @@
+<section class="cart-show container">
+
+  <header class="page-header">
+    <h1 class="display-5">My Basket</h1>
+  </header>
+  <% if enhanced_cart == [] %>
+    <div class="alert alert-light" role="alert">
+      Cart is empty, Go back to <%= link_to 'Homepage', root_path%>
+    </div>
+  <% else %>
+    <div class="row">
+      <div class="m-3 col-7 border item-container">
+        <h5 class="m-3 ms-2 fw-normal">Get it Shipped</h5>
+        <div class="item p-3 m-2">
+          <% enhanced_cart.each do |item| %>
+            <%= render 'item', product: item[:product], quantity: item[:quantity].to_i %>
+          <% end %>
+        </div>
+      </div>
+      <div class="m-3 p-4 col-4 border d-flex flex-column align-items-center total">
+        <div class="p-2 w-100 d-flex justify-content-between">
+          <span>Subtotal</span>
+          <span>$<%= cart_subtotal_cents %></span>
+        </div>
+        <div class="p-2 w-100 d-flex justify-content-between">
+          <span>Shipping</span>
+          <span>FREE</span>
+        </div>
+        <div class="p-2 pb-4 mb-4 w-100 d-flex justify-content-between border-bottom">
+          <span>Total</span>
+          <span>$<%= cart_subtotal_cents %></span>
+        </div>
+        <div>
+          <%= form_tag orders_path do %>
+            <script
+              src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+              data-key="<%= Rails.configuration.stripe[:publishable_key] %>"
+              data-amount="<%= cart_subtotal_cents %>"
+              data-name="Gloriasplantsandpots"
+              data-description="Test Order"
+              data-locale="auto"
+              data-email="test@gmail.com"
+              data-currency="cad">
+            </script>
+          <% end %>
+        </div>
+      </div>
+    </div>
+
+  <% end %>
+
+</section>

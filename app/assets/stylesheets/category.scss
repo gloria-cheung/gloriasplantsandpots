@@ -1,0 +1,29 @@
+@import "./global.scss";
+
+.categoryContainer {
+  border: none;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+    border-radius: 0.5em;
+  }
+  
+  .card-title {
+    color: $sixthColor;
+    opacity: 0;
+  }
+  &:hover {
+    .card-title {
+      opacity: 1;
+      transition: all 0.5s ease;
+    }
+    img {
+      opacity: 0.5;
+      transition: all 0.5s ease;
+    }
+  }
+
+}

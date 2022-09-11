@@ -1,0 +1,20 @@
+@import "./global.scss";
+
+.orders-show {
+  .line-item-header {
+    background-color: $thirdColor;
+  }
+  .line-item-container {
+    background-color: white;
+  }
+  .btn {
+    background-color: $mainColor;
+    color: white;
+  }
+  .item {
+    border-bottom: 1px solid #dee2e6;
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+}

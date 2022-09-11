@@ -1,0 +1,9 @@
+<div class="col">
+  <%= link_to product_path(category), class: "category" do %>
+    <%= image_tag category.image.thumb.url , alt: category.name %>
+
+    <p><%= category.name %></p>
+ 
+  <% end%>
+  
+</div>

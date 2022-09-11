@@ -13,13 +13,14 @@ end
 puts "Seeding..."
 
 ## CATEGORIES
-cat1 = Category.find_or_create_by! name: 'Face Pots'
-cat2 = Category.find_or_create_by! name: 'Cat Pots'
-cat3 = Category.find_or_create_by! name: 'Others'
+Product.destroy_all
+Category.destroy_all
+
+cat1 = Category.create!({name: 'Face Pots', image: open_asset('face', 'bearface2.png')})
+cat2 = Category.create!({name: 'Cat Pots', image: open_asset('cat', 'cat1.png')})
+cat3 = Category.create!({name: 'Other Pots', image: open_asset('other', 'monstera.png')})
 
 ## PRODUCTS
-
-Product.destroy_all
 
 cat1.products.create!({
   name:  'Bear Face Pot',

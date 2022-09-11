@@ -1,0 +1,16 @@
+@import "./global.scss";
+
+.item-container {
+  background-color: $thirdColor;
+  border-radius: 0.5em;
+  .item {
+    background-color: white;
+    border-bottom: 1px solid #dee2e6;
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+}
+.total {
+  border-radius: 0.5em;
+}

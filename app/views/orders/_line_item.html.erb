@@ -1,0 +1,13 @@
+<div class="d-flex mb-4 mt-4 item">
+  <div class="col-3">
+    <%= image_tag item.product.image.url , alt: item.product.name, class: "w-100" %>
+  </div>
+  <div class="col-6 ps-3 mb-3 d-flex flex-column justify-content-between">
+    <h5 class="mt-3"><%= item.product.name %></h5>
+    <p class="mb-0 mt-5">Qty: <%= item.quantity %></p>
+    <p>Price: $<%= item.product.price %></p>
+  </div>
+  <div class="col-3 d-flex flex-row-reverse pe-3 align-items-end">
+    <p> $<%= item.product.price * item.quantity %></p>
+  </div>
+</div>

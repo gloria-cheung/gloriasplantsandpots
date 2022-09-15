@@ -26,4 +26,5 @@ Rails.application.routes.draw do
 
   resources :contacts, only: [:new, :create]
 
+  resources :my_orders, only: [:index, :show]
 end

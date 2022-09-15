@@ -32,7 +32,7 @@ cat1.products.create!({
   ',
   image: open_asset('face', 'bearface1.png'),
   quantity: 1,
-  price_cents: 49.99
+  price_cents: 4999
 })
 cat1.products.create!({
   name:  'Brown Bear Face Pot',
@@ -46,7 +46,7 @@ cat1.products.create!({
   ',
   image: open_asset('face', 'bearface2.png'),
   quantity: 1,
-  price_cents: 46.99
+  price_cents: 4699
 })
 cat1.products.create!({
   name:  'Bear Face Mug',
@@ -58,7 +58,7 @@ cat1.products.create!({
   ',
   image: open_asset('face', 'bearface3.png'),
   quantity: 1,
-  price_cents: 39.99
+  price_cents: 3999
 })
 cat1.products.create!({
   name:  'Cat Face Pot',
@@ -72,7 +72,7 @@ cat1.products.create!({
   ',
   image: open_asset('face', 'catface1.png'),
   quantity: 1,
-  price_cents: 45.99
+  price_cents: 4599
 })
 cat1.products.create!({
   name:  'Brown Cat Face Pot',
@@ -86,7 +86,7 @@ cat1.products.create!({
   ',
   image: open_asset('face', 'catface2.png'),
   quantity: 1,
-  price_cents: 39.99
+  price_cents: 3999
 })
 cat1.products.create!({
   name:  'Cow Face Pot',
@@ -100,7 +100,7 @@ cat1.products.create!({
   ',
   image: open_asset('face', 'cowface.png'),
   quantity: 1,
-  price_cents: 49.99
+  price_cents: 4999
 })
 cat1.products.create!({
   name:  'Floral Face Pot #1',
@@ -114,7 +114,7 @@ cat1.products.create!({
   ',
   image: open_asset('face', 'floralface1.png'),
   quantity: 1,
-  price_cents: 45.99
+  price_cents: 4599
 })
 cat1.products.create!({
   name:  'Floral Face Pot #2',
@@ -128,7 +128,7 @@ cat1.products.create!({
   ',
   image: open_asset('face', 'floralface2.png'),
   quantity: 1,
-  price_cents: 45.99
+  price_cents: 4599
 })
 cat1.products.create!({
   name:  'Floral Face Pot #3',
@@ -142,7 +142,7 @@ cat1.products.create!({
   ',
   image: open_asset('face', 'floralface3.png'),
   quantity: 1,
-  price_cents: 49.99
+  price_cents: 4999
 })
 cat1.products.create!({
   name:  'Happy Face Pot',
@@ -156,7 +156,7 @@ cat1.products.create!({
   ',
   image: open_asset('face', 'happyface.png'),
   quantity: 1,
-  price_cents: 45.99
+  price_cents: 4599
 })
 cat1.products.create!({
   name:  'Koala Face Pot',
@@ -170,7 +170,7 @@ cat1.products.create!({
   ',
   image: open_asset('face', 'koalaface.png'),
   quantity: 1,
-  price_cents: 49.99
+  price_cents: 4999
 })
 cat1.products.create!({
   name:  'Mad Face Pot #1',
@@ -184,7 +184,7 @@ cat1.products.create!({
   ',
   image: open_asset('face', 'madface1.png'),
   quantity: 1,
-  price_cents: 45.99
+  price_cents: 4509
 })
 cat1.products.create!({
   name:  'Mad Face Pot #2',
@@ -198,7 +198,7 @@ cat1.products.create!({
   ',
   image: open_asset('face', 'madface2.png'),
   quantity: 1,
-  price_cents: 49.99
+  price_cents: 4999
 })
 cat1.products.create!({
   name:  'Mad Face Pot #3',
@@ -212,7 +212,7 @@ cat1.products.create!({
   ',
   image: open_asset('face', 'madface3.png'),
   quantity: 1,
-  price_cents: 49.99
+  price_cents: 4999
 })
 cat1.products.create!({
   name:  'Mad Face Pot #4',
@@ -226,7 +226,7 @@ cat1.products.create!({
   ',
   image: open_asset('face', 'madface4.png'),
   quantity: 1,
-  price_cents: 49.99
+  price_cents: 4999
 })
 cat1.products.create!({
   name:  'Monstera Face Pot',
@@ -240,7 +240,7 @@ cat1.products.create!({
   ',
   image: open_asset('face', 'monsteraface.png'),
   quantity: 1,
-  price_cents: 49.99
+  price_cents: 4999
 })
 cat1.products.create!({
   name:  'Panda Face Mug',
@@ -252,7 +252,7 @@ cat1.products.create!({
   ',
   image: open_asset('face', 'pandaface.png'),
   quantity: 1,
-  price_cents: 49.99
+  price_cents: 4999
 })
 cat1.products.create!({
   name:  'Pig Face Pot #1',
@@ -266,7 +266,7 @@ cat1.products.create!({
   ',
   image: open_asset('face', 'pigface1.png'),
   quantity: 1,
-  price_cents: 44.99
+  price_cents: 4499
 })
 cat1.products.create!({
   name:  'Pig Face Pot #2',
@@ -280,7 +280,7 @@ cat1.products.create!({
   ',
   image: open_asset('face', 'pigface2.png'),
   quantity: 1,
-  price_cents: 48.99
+  price_cents: 4899
 })
 cat1.products.create!({
   name:  'Pig Face Mug',
@@ -292,7 +292,7 @@ cat1.products.create!({
   ',
   image: open_asset('face', 'pigface3.png'),
   quantity: 1,
-  price_cents: 49.99
+  price_cents: 4999
 })
 cat1.products.create!({
   name:  'Reindeer Face Pot',
@@ -306,7 +306,7 @@ cat1.products.create!({
   ',
   image: open_asset('face', 'reindeerface.png'),
   quantity: 1,
-  price_cents: 49.99
+  price_cents: 4999
 })
 
 cat2.products.create!({
@@ -321,7 +321,7 @@ cat2.products.create!({
   ',
   image: open_asset('cat', 'cat1.png'),
   quantity: 1,
-  price_cents: 39.99
+  price_cents: 3999
 })
 cat2.products.create!({
   name:  'Pink Cat Pot',
@@ -335,7 +335,7 @@ cat2.products.create!({
   ',
   image: open_asset('cat', 'cat2.png'),
   quantity: 1,
-  price_cents: 39.99
+  price_cents: 3999
 })
 cat2.products.create!({
   name:  'Blue Cat Pot',
@@ -349,7 +349,7 @@ cat2.products.create!({
   ',
   image: open_asset('cat', 'cat3.png'),
   quantity: 1,
-  price_cents: 42.99
+  price_cents: 4299
 })
 cat2.products.create!({
   name:  'Cat Pot Unglazed #1',
@@ -363,7 +363,7 @@ cat2.products.create!({
   ',
   image: open_asset('cat', 'cat4.png'),
   quantity: 1,
-  price_cents: 39.99
+  price_cents: 3999
 })
 cat2.products.create!({
   name:  'Cat Pot Unglazed #2',
@@ -377,7 +377,7 @@ cat2.products.create!({
   ',
   image: open_asset('cat', 'cat5.png'),
   quantity: 1,
-  price_cents: 39.99
+  price_cents: 3999
 })
 cat2.products.create!({
   name:  'Cat Pot',
@@ -391,7 +391,7 @@ cat2.products.create!({
   ',
   image: open_asset('cat', 'cat6.png'),
   quantity: 1,
-  price_cents: 42.99
+  price_cents: 4299
 })
 cat2.products.create!({
   name:  'Cat Pot',
@@ -415,7 +415,7 @@ cat2.products.create!({
   ',
   image: open_asset('cat', 'cat8.png'),
   quantity: 1,
-  price_cents: 48.99
+  price_cents: 4899
 })
 
 cat3.products.create!({
@@ -430,7 +430,7 @@ cat3.products.create!({
   ',
   image: open_asset('other', 'floralpot.png'),
   quantity: 1,
-  price_cents: 44.99
+  price_cents: 4499
 })
 cat3.products.create!({
   name:  'Gloriosum Pot #1',
@@ -444,7 +444,7 @@ cat3.products.create!({
   ',
   image: open_asset('other', 'gloriosum.png'),
   quantity: 1,
-  price_cents: 44.99
+  price_cents: 4499
 })
 cat3.products.create!({
   name:  'Gloriosum Pot #2',
@@ -458,7 +458,7 @@ cat3.products.create!({
   ',
   image: open_asset('other', 'gloriosum2.png'),
   quantity: 1,
-  price_cents: 48.99
+  price_cents: 4899
 })
 cat3.products.create!({
   name:  'Gloriosum Pot #3',
@@ -472,7 +472,7 @@ cat3.products.create!({
   ',
   image: open_asset('other', 'gloriosum3.png'),
   quantity: 1,
-  price_cents: 43.99
+  price_cents: 4399
 })
 cat3.products.create!({
   name:  'Monstera Pot #1',
@@ -486,7 +486,7 @@ cat3.products.create!({
   ',
   image: open_asset('other', 'monstera.png'),
   quantity: 1,
-  price_cents: 55.99
+  price_cents: 5599
 })
 cat3.products.create!({
   name:  'Monstera Pot #2',
@@ -500,7 +500,7 @@ cat3.products.create!({
   ',
   image: open_asset('other', 'monstera2.png'),
   quantity: 1,
-  price_cents: 53.99
+  price_cents: 5399
 })
 cat3.products.create!({
   name:  'Monstera Pot #3',
@@ -514,7 +514,7 @@ cat3.products.create!({
   ',
   image: open_asset('other', 'monstera3.png'),
   quantity: 1,
-  price_cents: 50.99
+  price_cents: 5009
 })
 cat3.products.create!({
   name:  'Monstera Mug #1',
@@ -526,7 +526,7 @@ cat3.products.create!({
   ',
   image: open_asset('other', 'monsteramug.png'),
   quantity: 1,
-  price_cents: 55.99
+  price_cents: 5599
 })
 cat3.products.create!({
   name:  'Monstera Mug #2',
@@ -538,7 +538,7 @@ cat3.products.create!({
   ',
   image: open_asset('other', 'monsteramug2.png'),
   quantity: 1,
-  price_cents: 55.99
+  price_cents: 5599
 })
 cat3.products.create!({
   name:  'Rainbow Pot #1',
@@ -552,7 +552,7 @@ cat3.products.create!({
   ',
   image: open_asset('other', 'rainbow.png'),
   quantity: 1,
-  price_cents: 44.99
+  price_cents: 4499
 })
 cat3.products.create!({
   name:  'Rainbow Pot #2',
@@ -566,7 +566,7 @@ cat3.products.create!({
   ',
   image: open_asset('other', 'rainbow1.png'),
   quantity: 1,
-  price_cents: 42.99
+  price_cents: 4299
 })
 cat3.products.create!({
   name:  'Rainbow Pot #3',
@@ -580,7 +580,7 @@ cat3.products.create!({
   ',
   image: open_asset('other', 'rainbow2.png'),
   quantity: 1,
-  price_cents: 42.99
+  price_cents: 4299
 })
 
 puts "Seeding done."

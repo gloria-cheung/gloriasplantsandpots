@@ -1,0 +1,20 @@
+<section class="container orders-show w-50">
+  <header class="page-header">
+   <h1 class="display-5">My Orders</h1>
+  </header>
+  <div class="row">
+    <div class="col d-flex flex-column">
+      <div class="ps-3 pe-3 d-flex justify-content-between line-item-header">
+        <h5 class="fw-normal">Orders<h5>
+      </div>
+      <div class="line-item-container w-100">
+        <% @orders.each do |order| %>
+          <%= render 'line_order', order: order %>
+        <% end %>
+      </div>
+    </div>
+  </div>
+  <div class="d-flex flex-row-reverse">
+    <%= link_to "Continue Shopping", root_path, class: 'btn btn-lg' %>
+  </div>
+</section>

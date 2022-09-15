@@ -1,0 +1,15 @@
+@import "./global.scss";
+
+.signup-form {
+  color: $sixthColor;
+
+  .signup-btn {
+    background-color: $mainColor;
+    color: white;
+
+    &:hover {
+      background-color: $secondColor;
+      transition: all 0.5s ease;
+    }
+  }
+}

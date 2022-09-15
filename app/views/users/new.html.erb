@@ -30,6 +30,9 @@
 
       <%= form.submit 'Sign Up', class: 'btn signup-btn m-3' %>
     <% end %>
+      <div class="alert alert-light" role="alert">
+        Already have an account? <%= link_to 'Login', new_session_path, class: 'login-link' %>
+      </div>
     </div>
     <div class="col-3"></div>
   </div>

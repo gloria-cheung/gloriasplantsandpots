@@ -1,9 +1,17 @@
 <div class="col-3 card p-3">
   <%= link_to product_path(product), class: "product" do %>
-    <%= image_tag product.image.thumb.url , alt: product.name, class: 'card-img-top w-100' %>
+    <% if product.quantity == 0 %>
+      <%= image_tag product.image.thumb.url , alt: product.name, class: 'soldout card-img-top w-100' %>
+    <% else %>
+      <%= image_tag product.image.thumb.url , alt: product.name, class: 'card-img-top w-100' %>
+    <% end %>
     <div class="card-body">
       <h5 class="card-title"><%= product.name %></h5>
-      <p class="card-text">$<%= product.price_cents / 100.0 %></p>
+      <% if product.quantity == 0 %>
+        <p class="card-text">Sold Out</p>
+      <% else %>
+        <p class="card-text">$<%= product.price_cents / 100.0 %></p>
+      <% end %>
     </div>
  
   <% end%>

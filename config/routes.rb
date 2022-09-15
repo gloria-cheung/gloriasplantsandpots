@@ -23,4 +23,7 @@ Rails.application.routes.draw do
   get '/logout' => 'sessions#destroy'
 
   get '/about' => 'about#index'
+
+  resources :contacts, only: [:new, :create]
+
 end

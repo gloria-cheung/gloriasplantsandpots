@@ -15,7 +15,7 @@
         <% end %>
       </div>
       <div class="ps-3 pe-3 mb-3 d-flex flex-row-reverse line-item-header">
-        <h5 >TOTAL: $<%= @order.total_cents %><h5>
+        <h5 >TOTAL: $<%= @order.total_cents / 100.0 %><h5>
       </div>
     </div>
   </div>

@@ -13,7 +13,7 @@
       <p><%= @product.description %></p>
       <div class="quantity">
         <span><%= @product.quantity %> in stock at </span>
-        <span>$<%= @product.price_cents %></span>
+        <span>$<%= @product.price_cents / 100.0 %></span>
       </div>
       <div class="price">
         <% if @product.quantity == 0 %>

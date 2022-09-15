@@ -3,7 +3,7 @@
     <%= image_tag product.image.thumb.url , alt: product.name, class: 'card-img-top w-100' %>
     <div class="card-body">
       <h5 class="card-title"><%= product.name %></h5>
-      <p class="card-text">$<%= product.price_cents %></p>
+      <p class="card-text">$<%= product.price_cents / 100.0 %></p>
     </div>
  
   <% end%>

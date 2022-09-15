@@ -1,0 +1,11 @@
+@import "./global.scss";
+.order {
+  text-decoration: none;
+  color: $mainColor;
+  font-weight: 400;
+  
+  &:hover {
+    opacity: 0.5;
+    transition: all 0.5s ease;
+  }
+}

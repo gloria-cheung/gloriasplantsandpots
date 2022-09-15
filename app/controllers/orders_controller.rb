@@ -2,6 +2,7 @@ class OrdersController < ApplicationController
   def show
     @order = Order.find(params[:id])
     @line_items = LineItem.where(order_id: @order.id )
+    update_quantity
   end
 
   def create
@@ -54,5 +55,13 @@ class OrdersController < ApplicationController
     end
     order.save!
     order
+  end
+
+  def update_quantity
+    @line_items.each do |item|
+      product = Product.find(item.product_id)
+      product.quantity = product.quantity - item.quantity
+      product.save
+    end
   end
 end

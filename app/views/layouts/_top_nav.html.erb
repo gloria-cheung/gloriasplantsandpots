@@ -9,13 +9,18 @@
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div class="d-flex justify-content-between w-100">
         <div class="navbar-nav">
-          <a class="nav-link p-4" href="/categories">SHOP</a>
-          <a class="nav-link p-4" href="/about">ABOUT</a>
-          <a class="nav-link p-4" href="#">CONTACT US</a>
+          <a class="nav-link p-4" href="/categories">shop</a>
+          <a class="nav-link p-4" href="/about">about</a>
+          <a class="nav-link p-4" href="#">contact us</a>
         </div>
         <div class="navbar-nav">
-          <a class="nav-link p-4" href="/sessions/new"> <i class="material-icons">person</i></a>
-          <a class="nav-link p-4" href="/cart"> <i class="material-icons">shopping_cart</i></a>
+          <% if current_user %>
+            <a class="nav-link p-4 d-flex align-items-center justify-content-center" href="/logout">logout</a>
+            <a class="nav-link p-4 disabled d-flex align-items-center justify-content-center" href="/logout"> <i class="material-icons">person</i> (<%= current_user.name %>)</a>
+          <% else %>
+            <a class="nav-link p-4 d-flex" href="/sessions/new"> <i class="material-icons">person</i></a>
+          <% end %>
+          <a class="nav-link p-4 d-flex" href="/cart"> <i class="material-icons">shopping_cart</i></a>
         </div>
       </div>
     </div>

@@ -7,6 +7,7 @@ class SessionsController < ApplicationController
       session[:user_id] = user.id
       redirect_to '/'
     else
+      flash[:alert] = 'Incorrect email or password, please try again'
       redirect_to '/sessions/new'
     end
   end

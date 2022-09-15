@@ -21,10 +21,15 @@
       </div>
       <%= form.submit 'Send Message', class: 'btn contact-btn m-3' %>
     <% end %>
-    <div class="alert alert-light" role="alert">
-      <%= flash[:alert] %>
-      <%= flash[:notice] %>
-    </div>
+    <% if flash[:alert] %>
+      <div class="alert alert-danger" role="alert">
+        <%= flash[:alert] %>
+      </div>
+    <% elsif flash[:notice] %>
+      <div class="alert alert-light" role="alert">
+        <%= flash[:notice] %>
+      </div>
+    <% end %>
 
     </div>
     <div class="col-3"></div>

@@ -21,6 +21,11 @@
           <%= submit_tag "Submit", class: 'btn login-btn m-3' %>
         <% end %>
       </div>
+      <% if flash[:alert] %>
+        <div class="alert alert-danger" role="alert">
+          <%= flash[:alert] %>
+        </div>
+      <% end %>
       <div class="alert alert-light" role="alert">
         No account? <%= link_to 'Sign Up Now', new_user_path, class: 'signup-link' %>
       </div>

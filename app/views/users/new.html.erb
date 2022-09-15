@@ -30,6 +30,11 @@
 
       <%= form.submit 'Sign Up', class: 'btn signup-btn m-3' %>
     <% end %>
+      <% if flash[:alert] %>
+        <div class="alert alert-danger" role="alert">
+          <%= flash[:alert] %>
+        </div>
+      <% end %>
       <div class="alert alert-light" role="alert">
         Already have an account? <%= link_to 'Login', new_session_path, class: 'login-link' %>
       </div>

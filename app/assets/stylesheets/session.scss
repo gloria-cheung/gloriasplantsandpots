@@ -1,9 +1,9 @@
 @import "./global.scss";
 
-.signup-form {
+.login-form {
   color: $sixthColor;
 
-  .signup-btn {
+  .login-btn {
     background-color: $mainColor;
     color: white;
 
@@ -13,7 +13,8 @@
     }
   }
 }
-.login-link {
+
+.signup-link {
   text-decoration: none;
   color: $mainColor;
 

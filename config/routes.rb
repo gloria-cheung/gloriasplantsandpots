@@ -18,5 +18,6 @@ Rails.application.routes.draw do
   
   resources :orders, only: [:create, :show]
   resources :users, only: [:create, :new]
-  
+  resources :sessions, only: [:create, :new]
+
 end

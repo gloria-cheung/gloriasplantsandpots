@@ -61,6 +61,9 @@
     text-decoration: none;
     color: $sixthColor;
     
+    .soldout {
+      opacity: 0.5;
+    }
     img {
       border-radius: 0.5em;
 

@@ -5,8 +5,6 @@ Rails.application.routes.draw do
   # root "articles#index"
   root to: 'products#index'
 
-  get '/about' => 'about#index'
-
   resources :products, only: [:index, :show]
 
   resources :categories, only: [:index, :show]
@@ -17,7 +15,12 @@ Rails.application.routes.draw do
   end
   
   resources :orders, only: [:create, :show]
-  resources :users, only: [:create, :new]
-  resources :sessions, only: [:create, :new]
 
+  resources :users, only: [:create, :new]
+  
+  resources :sessions, only: [:create, :new]
+  
+  get '/logout' => 'sessions#destroy'
+
+  get '/about' => 'about#index'
 end

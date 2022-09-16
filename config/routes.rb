@@ -27,4 +27,9 @@ Rails.application.routes.draw do
   resources :contacts, only: [:new, :create]
 
   resources :my_orders, only: [:index, :show]
+
+  namespace :admin do
+    root to: 'products#index'
+    resources :products, except: [:edit, :update, :show]
+  end
 end

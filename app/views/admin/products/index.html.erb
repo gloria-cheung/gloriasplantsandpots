@@ -1,7 +1,7 @@
-<section class="container orders-show w-75">
-  <header class="page-header">
+<section class="container w-75">
+  <header>
   <h1 class="display-5">
-    <%= link_to "Admin", root_path %> &raquo; Products
+    <%= link_to "Admin", [:admin, :products] %> &raquo; Products
   </h1>
   </header>
   <%= link_to '+ New Product', [:new, :admin, :product], class: 'btn' %>

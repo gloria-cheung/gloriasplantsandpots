@@ -1,0 +1,18 @@
+<section class="container orders-show w-75">
+  <header class="page-header">
+  <h1 class="display-5">
+    <%= link_to "Admin", root_path %> &raquo; Products
+  </h1>
+  </header>
+  <%= link_to '+ New Product', [:new, :admin, :product], class: 'btn' %>
+  <div class="row">
+    <div class="col d-flex flex-column">
+      <div class="line-item-container w-100">
+        <%= render @products %>
+      </div>
+    </div>
+  </div>
+  <div class="d-flex flex-row-reverse">
+    <%= link_to "Continue Shopping", root_path, class: 'btn btn-lg' %>
+  </div>
+</section>

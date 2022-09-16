@@ -1,0 +1,15 @@
+<div class="d-flex mb-4 mt-4 item">
+  <div class="col-3">
+    <%= image_tag product.image.url , alt: product.name, class: "w-100" %>
+  </div>
+  <div class="col-6 ps-3 mb-3 d-flex flex-column justify-content-between">
+    <h5 class="mt-3"><%= product.name %></h5>
+    <p><%= product.description %></p>
+    <p class="mb-0 mt-5">Qty: <%= product.quantity %></p>
+    <p>Price: $<%= product.price %></p>
+  </div>
+  <div class="col-3 d-flex flex-row-reverse mb-4 align-items-end">
+    <%= link_to fa_icon('trash'), [:admin, product], class: 'btn btn-sm m-2', method: :delete, data: { confirm: "Are you sure?" } %>
+    <%= link_to fa_icon('edit'), [:admin, product], class: 'btn btn-sm m-2', method: :patch%>
+  </div>
+</div>

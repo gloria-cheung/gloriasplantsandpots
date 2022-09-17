@@ -4,7 +4,7 @@
 
 Glorias Plants & Pots is an e-commerce app built with Rails 7.0 that allows logged-in users to purchase handmade pottery and see previous orders. Users with admin access can maintain storefront by adding new products, updating existing products and deleting unwanted products.
 
-Deployed [here](https://production--schedulerapp-lhl.netlify.app/)
+Deployed [here](https://gloriasplantsandpots.herokuapp.com/)
 
 ## Final Product
 
@@ -38,6 +38,6 @@ Deployed [here](https://production--schedulerapp-lhl.netlify.app/)
 - Rails 7.0
 - Bootstrap 5.1
 - SASS
-- PostgreSQL 
+- PostgreSQL
 - Stripe
 - Mail Form

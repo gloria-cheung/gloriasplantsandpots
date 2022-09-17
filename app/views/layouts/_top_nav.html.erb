@@ -3,26 +3,38 @@
   <a class="navbar-brand" href="/">
     <img src="/gloriasplantsandpots.png" alt="logo" width="150" className="d-inline-block align-top" />
   </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-      <div class="d-flex justify-content-between w-100">
-        <div class="navbar-nav">
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
           <a class="nav-link p-4" href="/categories">shop</a>
+        </li>
+        <li class="nav-item">
           <a class="nav-link p-4" href="/about">about</a>
+        </li>
+        <li class="nav-item">
           <a class="nav-link p-4" href="/contacts/new">contact us</a>
-        </div>
-        <div class="navbar-nav">
-          <% if current_user %>
-            <a class="nav-link p-4 d-flex align-items-center justify-content-center" href="/logout">logout</a>
-            <a class="nav-link p-4 d-flex align-items-center justify-content-center" href="/my_orders"> <i class="material-icons">person</i> (<%= current_user.name %>)</a>
-          <% else %>
-            <a class="nav-link p-4 d-flex" href="/sessions/new"> <i class="material-icons">person</i></a>
-          <% end %>
+        </li>
+      </ul>
+      <ul class="navbar-nav ms-auto">
+      <% if current_user %>
+        <li class="nav-item">
+          <a class="nav-link p-4 d-flex" href="/logout">logout</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link p-4 d-flex" href="/my_orders"> <i class="material-icons">person</i> (<%= current_user.name %>)</a>
+        </li>
+      <% else %>
+        <li class="nav-item">
+          <a class="nav-link p-4 d-flex" href="/sessions/new"> <i class="material-icons">person</i></a>
+        </li>
+      <% end %>
+        <li class="nav-item">
           <a class="nav-link p-4 d-flex" href="/cart"> <i class="material-icons">shopping_cart</i> (<%= cart.size %>)</a>
-        </div>
-      </div>
+        </li>
+      </ul>
     </div>
-  </div>
+</div>
 </nav>

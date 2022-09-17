@@ -1,4 +1,4 @@
-<div class="col-3 card p-3">
+<div class="col-sm-6 col-md-3 card p-3">
   <%= link_to product_path(product), class: "product" do %>
     <% if product.quantity == 0 %>
       <%= image_tag product.image.thumb.url , alt: product.name, class: 'soldout card-img-top w-100' %>

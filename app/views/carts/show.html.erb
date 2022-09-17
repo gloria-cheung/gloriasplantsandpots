@@ -9,7 +9,7 @@
     </div>
   <% else %>
     <div class="row">
-      <div class="m-3 col-7 border item-container">
+      <div class="m-3 col-sm-11 col-md-7 border item-container">
         <h5 class="m-3 ms-2 fw-normal">Get it Shipped</h5>
         <div class="item p-3 m-2">
           <% enhanced_cart.each do |item| %>
@@ -17,7 +17,7 @@
           <% end %>
         </div>
       </div>
-      <div class="m-3 p-4 col-4 border d-flex flex-column align-items-center total">
+      <div class="m-3 p-4 col-sm-11 col-md-4 border d-flex flex-column align-items-center total">
         <div class="p-2 w-100 d-flex justify-content-between">
           <span>Subtotal</span>
           <span>$<%= cart_subtotal_cents / 100.0 %></span>

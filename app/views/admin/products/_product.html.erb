@@ -9,7 +9,9 @@
     <p>Price: $<%= product.price %></p>
   </div>
   <div class="col-3 d-flex flex-row-reverse mb-4 align-items-end">
-    <%= link_to fa_icon('trash'), [:admin, product], class: 'btn btn-sm m-2', data: { "turbo-method": :delete, turbo_confirm: 'Are you sure?' } %>
+    <%= button_to [:admin, product], class: 'btn btn-sm m-2' , method: :delete do %>
+      <%= fa_icon "trash"%>
+    <% end %>
     <%= link_to fa_icon('edit'), edit_admin_product_path(product.id), class: 'btn btn-sm m-2'%>
   </div>
 </div>

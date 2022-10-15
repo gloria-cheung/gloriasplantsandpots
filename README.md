@@ -41,3 +41,9 @@ Deployed [here](https://gloriasplantsandpots.herokuapp.com/)
 - PostgreSQL
 - Stripe
 - Mail Form
+
+## Connect With Me
+
+[Github](https://github.com/gloria-cheung)
+-- [Linkedin](http://www.linkedin.com/in/gloria-cheung) --
+[Portfolio](http://www.gloria-cheung.com)
